@@ -17,6 +17,7 @@ Exec=$DIR_PATH/meditation.sh
 OnlyShowIn=GNOME;" > $DESKTOP_FILE
 
 # link to generated startup script.
-mkdir -p $HOME/.config/autostart
-rm -f $HOME/.config/autostart/meditation.desktop
-ln -s $DESKTOP_FILE $HOME/.config/autostart/meditation.desktop
+XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"
+mkdir -p $XDG_CONFIG_HOME/autostart
+rm -f $XDG_CONFIG_HOME/autostart/meditation.desktop
+ln -s $DESKTOP_FILE $XDG_CONFIG_HOME/autostart/meditation.desktop

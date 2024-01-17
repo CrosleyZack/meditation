@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt-get install -y libnotify-bin
+# sudo apt-get install -y libnotify-bin
 
 FILE_PATH=$(realpath $BASH_SOURCE)
 # echo "FILE_PATH = $FILE_PATH"
@@ -21,3 +21,4 @@ XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"
 mkdir -p $XDG_CONFIG_HOME/autostart
 rm -f $XDG_CONFIG_HOME/autostart/meditation.desktop
 ln -s $DESKTOP_FILE $XDG_CONFIG_HOME/autostart/meditation.desktop
+echo "stoic meditation installed"

@@ -6,4 +6,6 @@ To install, execute `meditation_install.sh` to create a `.desktop` file in `~/.c
 
 `meditation_cron.sh` will run `meditation.sh` as well as create a cronjob to run it periodically (default of every four hours) if it doesn't already exist.
 
+Meditations can be added to `meditations.json`. `meditation.sh` will select from this file at random (default of four) for meditations to display.
+
 Intended for use with [random desktop quote](https://github.com/CrosleyZack/random_desktop_quote)

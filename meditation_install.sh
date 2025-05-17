@@ -13,7 +13,7 @@ rm -f $DESKTOP_FILE
 echo "[Desktop Entry]
 Type=Application
 Name=MediationScript
-Exec=$DIR_PATH/meditation_cron.sh
+Exec=$DIR_PATH/meditation.sh
 OnlyShowIn=GNOME;" > $DESKTOP_FILE
 
 # link to generated startup script.
